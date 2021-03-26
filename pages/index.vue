@@ -9,31 +9,28 @@
                     <div class="service-name">
                         Co-ReTweet
                     </div>
-                    <div> 
-                        もっと世に知られるべき、<br>
-	                      イケてるサービスを発掘！
-                    </div>
-                    <div> 
-                        個人ビジネスのための<br>
-                        コストフリーな<br>
-                        メンバー制の集客アプリ
-                    </div>
                 </h1>
+                <div style="text-align:center; letter-spacing: 3px; font-size:18px">
+                  <div> 
+                      <span class="big">もっと</span>世に知られるべき、<br>
+                      素敵なサービスを発掘！
+                  </div>
+                  <div style="margin:50px"/>
+                  <div> 
+                      個人ビジネスのための<br>
+                      お金のかからない<br>
+                      メンバー制の<span class="big">集客</span>アプリ
+                  </div>
+                </div>
             </div>
             
             <div id="describe" class="wrapper">
                 <h2>Co-ReTweetとは</h2>
-                <div class="indent-20">
+                <div class="indent-20" style="">
                     <div class="mini-wrapper">
-                        <p>自分のサービス/プロダクトには自信がある！</p>
-                        <p>でも...</p>
-                        <ul class="bold">
-                            <li>ユーザーが集まらない</li>
-                            <li>サービスが認知されない</li>
-                            <li>フォロワーが少なく<br>個人の力だけでPRするのが難しい</li>
-                            <li>フォロワーはいるが、<br>自分のサービスのターゲット顧客は少ない</li>
-                            <li>でも、PRにお金はかけたくない</li>
-                        </ul>
+                        <p>自分のサービス/プロダクトには<span class="mid">自信がある！</span><br>
+                        でも...<br>
+                        <span class="mid">ユーザーが集まらない！</span></p>
                     </div>
 
                     <div class="mini-wrapper">
@@ -54,10 +51,10 @@
 
             <div id="solution" class="wrapper">
                 <h2>Co-ReTweetでできること</h2>
-                <ul class="bold">
-                    <li class="check">本当にいい/おもしろいサービスを<br>多くの人に知ってもらえる</li>
-                    <li class="check">お金をかけずにPRできる</li>
-                    <li class="check">フォロワーが少なくてもPRできる</li>
+                <ul>
+                    <li class="check"><span class="mid">本当にいい/おもしろい</span>サービスを<br>多くの人に知ってもらえる</li>
+                    <li class="check"><span class="mid">お金をかけず</span>にPRできる</li>
+                    <li class="check">フォロワーが<span class="mid">0人</span>でもバズる！</li>
                     <li class="check">これまで関係が薄かった顧客に<br>アプローチできる</li>
                 </ul>
                 <img border="0" src="@@/assets/two-business-partners-handshaking.png">
@@ -98,14 +95,6 @@
                     Co-ReTweetで、あなたのツイートにターゲット顧客のカテゴリ設定をしてください。<br>
                     設定したカテゴリと同じカテゴリのユーザーにリツイートされやすくなり、<br>
                     それにより、あなたのツイートがターゲット顧客の目に触れやすくなります。<br>
-                    <br>
-                    たとえば、「レシピ投稿アプリをリリースしました！」というツイートに<br>
-                    『料理』『生活』といったカテゴリを設定して投稿してください。<br>
-                    ユーザーカテゴリに『料理』『生活』を設定している料理YouTuberや主婦層は、<br>
-                    あなたのツイートをリツイートすることで獲得できるRT(リツイート)ポイントが増加し、<br>
-                    あなたのツイートをリツイートするインセンティブを得ます。<br>
-                    料理YouTuberや主婦層にあなたのツイートをリツイートしてもらうことで、<br>
-                    「レシピ投稿アプリをリリースしました！」というツイートをターゲット顧客に届けることができます。
                 </p>
                 <div style="text-align:center; margin-bottom:50px;">
                     <img border="0" src="@@/assets/two-business-partners-handshaking_2.png" style="width:300px;">
@@ -117,7 +106,7 @@
                     </li>
                 </h3>
                 <p class="indent-20">
-                    1回のツイートが人々の目に触れる期間は、通常半日～1日ほど。<br>
+                    1回のツイートが人々の目に触れる期間は、通常1～3時間ほどと言われています。<br>
                     それ以降は、他のツイートに埋もれて宣伝効果を失ってしまいます。<br>
                     かと言って同じ内容を何度もツイートすれば、フォロワーが離れてしまいます。<br>
                     <br>
@@ -203,10 +192,21 @@ export default {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
 p {
-    line-height:25px;
+    line-height:35px;
 }
+
+.big {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mid {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 b, strong, .bold{
-    font-weight: bold;
+  font-weight: bold;
 	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI semibold", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
 }
 h1 {
@@ -235,6 +235,7 @@ h2 {
 }
 ul {
     padding-left: 30px;
+    letter-spacing: 2px;
 }
 li {
     padding: 5px 0;
@@ -243,7 +244,7 @@ li {
     list-style: none;
 	padding-left: 20px;
 	line-height: 1.6em;
-	background: url(assets/check.png) left 0px top 3px no-repeat;
+	background: url(assets/check.png) left 0px top 11px no-repeat;
 	background-size: 15px auto;
     margin-bottom: 5px;
 }
